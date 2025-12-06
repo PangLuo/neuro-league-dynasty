@@ -18,7 +18,12 @@ Manage a men’s football club and compete against an AI-controlled club in a st
 ### 2. Player Draft
 - Draft consists of **3 rounds**.  
 - Each round:  
-  1. **A** dynamically generates a pool of 16 players with varying skill levels. The star ratings should be distributed in a pyramid structure across the pool, with top-rated players at the top.
+  1. **A** dynamically generates a pool of 16 players with varying skill levels. Use a pyramid distribution where higher-rated players are increasingly rare:
+6★ players should be extremely rare (elite/world class talent)
+5★ players should be rare (excellent)
+4★ players should be uncommon (very good)
+3★ players should be fairly common (average/solid)
+2★ and 1★ players should make up the bulk of the pool (below average to poor)
   2. **H** and **C** alternate picks.  
   3. **Once a player is picked, they cannot be replaced.**  
   4. **H** or **C** may choose to stop picking; the other may continue. If both stop, the round ends.  
